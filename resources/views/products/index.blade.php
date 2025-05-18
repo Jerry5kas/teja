@@ -5,6 +5,7 @@
     <div x-data="productPage()" x-init="initLucide()" class="max-w-6xl mx-auto mt-10">
 
         <div class="flex justify-between items-center mb-6">
+
             <div
                 x-data="{ open: false, selected: '{{ $categoryId ?? '' }}', categories: {{ $categories->toJson() }} }"
                 class="relative mb-6 w-72">
